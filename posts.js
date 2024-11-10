@@ -1,35 +1,31 @@
-function postsData(){
+function loadData(){
   fetch('https://jsonplaceholder.typicode.com/posts')
-  .then(res => res.json())
-  .then(data => displayData(data))
+  .then(response => response.json())
+  .then(data => displayPost(data))
 }
-postsData();
+loadData();
 
 
-const displayPosts = (data) =>{
-  const callPosts = document.getElementById("posts");
+const displayPost = (data) =>{
+  const coldata = document.getElementById("posts");
 
   data.forEach((post) => {
-      console.log(post)
-      const div = document.createElement("div")
-      
-      div.innerHTML = `
-         
+      const postdiv = document.createElement("div")
 
-          <div class="card"style="width: 18rem;">
-                   <div class="card-body">
-                       <h5 class="card-title">Card title</h5>
-                       <p class="card-text text-info">${post.title}</p>
-                       <p>${post.body}</p>
 
-                      <a href="#" class="btn btn-warning">Go</a>
-                  </div>
-          </div>
-      
+      postdiv.innerHTML = `
+         <div class="card" style="width: 16rem;">
+               <img src="img/patha.png..."class=card-img-top" alt="img/patha.png...">
+              <div class="card-body">
+                <p class="card-text">${post.title}</p>
+                <p>${post.body}</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+         </div>
       `;
 
-      callPosts.appendChild(postsdiv);
-  })
+      coldata.appendChild(postdiv);
+    });
 
 
-}
+};

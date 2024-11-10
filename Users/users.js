@@ -16,7 +16,7 @@ const displayData =(data) =>{
         usersDiv.innerHTML=`
              <div class="card" style="width: 16rem;">   
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
+                     <h5 class="card-title">Card title</h5>
                     <p class="card-text">${user.id}</p>
                     <p class="card-text">${user.name}</p>
                     <a href="#" class="btn btn-primary">Go</a>
