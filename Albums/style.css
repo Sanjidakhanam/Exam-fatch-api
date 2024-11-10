@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 1400px;
+ 
+    margin: 0 auto;
+}
+.card-body{
+    background-color: rgb(2, 92, 108);
+    color: rgb(246, 205, 2);
+    row-gap: 5px;
+    grid-row: span;
+    border-radius: 9px;
+    
+
+
+}

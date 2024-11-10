@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1400px;
+    padding:0;
+    margin: 0 auto;
+}
+.card-body{
+    background-color: rgb(215, 241, 17);
+    font-family: Arial, Helvetica, sans-serif;
+    row-gap: 5px;
+    grid-row: span;
+    border-radius: 9px;
+    
+
+
+}

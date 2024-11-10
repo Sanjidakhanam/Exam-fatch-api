@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1400px;
+    padding:0;
+    margin: 0 auto;
+}
+.card-body{
+    background-color: rgb(226, 112, 217);
+    color: blue;
+    row-gap: 5px;
+    grid-row: span;
+    border-radius: 9px;
+    
+
+
+}
